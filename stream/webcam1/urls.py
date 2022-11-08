@@ -1,0 +1,12 @@
+from django.contrib import admin
+from django.urls import path
+
+
+from webcam import views
+urlpatterns = [
+    path('', views.index, name='index'),
+    #path('video_feed_drone1/', views.video_feed_drone1, name='video_feed_drone1'),
+    path('video_feed_drone2/', views.video_feed_drone2, name='video_feed_drone2')
+    #path('video_feed_drone3/', views.video_feed_drone3, name='video_feed_drone3'),
+    #path('video_feed_camera1/', views.video_feed_camera1, name='video_feed_camera1')
+]
